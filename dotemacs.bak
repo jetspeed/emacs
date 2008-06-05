@@ -1,0 +1,50 @@
+(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(canlock-password "7c50f11f7f5a7c6b841d2ba53d220faf6436dced")
+ '(column-number-mode t)
+ '(display-time-mode t)
+ '(ecb-options-version "2.32")
+ '(jde-compiler (quote ("javac" "")))
+ '(jde-complete-function (quote jde-complete-menu))
+ '(jde-jdk-registry (quote (("1.5" . "/usr/lib/jvm/java-1.5.0-sun"))))
+ '(line-spacing 5)
+ '(muse-blosxom-base-directory "~/temp/tiddlyWiki/muse/source/blog/")
+ '(muse-blosxom-use-tags t)
+ '(muse-file-extension "muse")
+ '(muse-html-charset-default "utf-8")
+ '(muse-html-encoding-default (quote utf-8))
+ '(muse-html-encoding-map "utf8")
+ '(muse-html-markup-functions (quote ((anchor . muse-html-markup-anchor) (table . muse-html-markup-table) (footnote . muse-html-markup-footnote))))
+ '(muse-html-meta-content-encoding (quote utf-8))
+ '(muse-html-meta-content-type "text/xhtml; charset=utf-8")
+ '(muse-mode-auto-p t)
+ '(muse-mode-hook (quote (flyspell-mode footnote-mode)))
+ '(muse-publish-comments-p t)
+ '(muse-publish-desc-transforms (quote (muse-wiki-publish-pretty-title muse-wiki-publish-pretty-interwiki)))
+ '(muse-table-line-regexp "^|?[[:blank:]]*\\(?:[^|
+]+\\||\\)[[:blank:]-]+\\([|+]+\\)\\(?:[[:blank:]-]+\\|$\\)[^|
+].*")
+ '(muse-wiki-ignore-bare-project-names t)
+ '(muse-wiki-publish-small-title-words (quote ("the" "and" "at" "on" "of" "for" "in" "an" "a" "page" "anime")))
+ '(outline-minor-mode-prefix "")
+ '(safe-local-variable-values (quote ((todo-categories "php" "paper" "ror" "python" "daily" "mpi" "java" "job"))))
+ '(scroll-bar-mode (quote right))
+ '(show-paren-mode t)
+ '(text-mode-hook (quote (text-mode-hook-identify)))
+ '(transient-mark-mode t))
+(custom-set-faces
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ )
+;; (create-fontset-from-fontset-spec
+;; "-*-courier-medium-r-normal-*-20-*-*-*-*-*-fontset-courier")
+;; (set-default-font "fontset-courier")
+;; (setq default-frame-alist
+;; (append
+;; '((font . "fontset-courier")) default-frame-alist))
+(mapc 'load (directory-files "~/emacs" t "\\.el\\'"))
