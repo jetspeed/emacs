@@ -1,0 +1,26 @@
+(add-to-list 'load-path "~/.emacs.d/myEmacs/load-lisp")
+;; ensure abbrev mode is always on
+(setq-default abbrev-mode t)
+
+;; do not bug me about saving my abbreviations
+(setq save-abbrevs nil)
+
+;; load up modes I use
+(require 'cc-mode)
+;(require 'jde)
+;(require 'perl-mode)
+;(require 'cperl-mode)
+;; (require 'sh-script)
+;; (require 'shell)
+(require 'tex-site) ;; I use AUCTeX
+(require 'latex)    ;; needed to define LaTeX-mode-hook under AUCTeX
+(require 'tex)      ;; needed to define TeX-mode-hook under AUCTeX
+(require 'python)   ;; I use python.el from Emacs CVS, uncomment if you do also
+
+;; load up abbrevs for these modes
+(require 'msf-abbrev)
+(setq msf-abbrev-verbose t) ;; optional
+(setq msf-abbrev-root "~/.emacs.d/myBigEmacs/mode-abbrevs")
+;(global-set-key (kbd "C-c x l") 'msf-abbrev-goto-root)
+;(global-set-key (kbd "C-c x a") 'msf-abbrev-define-new-abbrev-this-mode)
+(msf-abbrev-load)

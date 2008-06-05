@@ -1,0 +1,18 @@
+
+;; gnuserv.el
+(add-to-list 'load-path "~/.emacs.d/myBigEmacs/gnuserv")
+
+;; (load-file "~/.emacs.d/myBigEmacs/gnuserv/gnuserv-compat.el")
+;; (load-file "~/.emacs.d/myBigEmacs/gnuserv/gnuserv.el")
+
+
+;(require 'gnuserv-compat)
+;;---------gnuserv settings-----------;;
+;; (autoload 'gnuserv-start "gnuserv-compat"
+;;  "Allow this Emacs process to be a server for client processes." t)
+;(require 'gnuserv-compat)
+;(require 'gnuserv)
+(load "gnuserv-compat")
+(load "gnuserv")
+(gnuserv-start)
+;;------- end of gnuverv settings------;;
